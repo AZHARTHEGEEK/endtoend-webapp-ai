@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class ImguploadConfig(AppConfig):
+class HomeConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'imgupload'
+    name = 'home'
