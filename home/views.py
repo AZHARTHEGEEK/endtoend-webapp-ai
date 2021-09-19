@@ -38,8 +38,8 @@ def imageprocess(request):
         html = decode_predictions(preds, top=3)[0]
         res = []
         for e in html:
-            res.append((e[1].np.round(e[2]*100,2)))
-
+            res.append((e[1],np.round(e[2]*100,2)))
     return render(request, "result.html",{'res':res})
+       
 
 # Create your views here.
